@@ -15,9 +15,7 @@
 	BOOL displayedWhenStopped;
 	BOOL spinning;
 	NSColor *color;
-	float redComponent;
-	float greenComponent;
-	float blueComponent;
+	CGFloat redComponent, greenComponent, blueComponent;
 }
 
 - (NSColor *)color;

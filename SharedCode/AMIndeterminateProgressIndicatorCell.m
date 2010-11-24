@@ -50,7 +50,7 @@
 
 - (void)setColor:(NSColor *)value
 {
-	float alphaComponent;
+	CGFloat alphaComponent;
 	if (color != value) {
 		[color release];
 		color = [value retain];
