@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'IPICellTest' target in the 'IPICellTest' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
