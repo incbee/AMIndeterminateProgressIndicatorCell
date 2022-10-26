@@ -55,7 +55,6 @@
 		[color release];
 		color = [value retain];
 		[[color colorUsingColorSpaceName:NSCalibratedRGBColorSpace] getRed:&redComponent green:&greenComponent blue:&blueComponent alpha:&alphaComponent];
-		NSAssert((alphaComponent > 0.999), @"color must be opaque");
 	}
 }
 
