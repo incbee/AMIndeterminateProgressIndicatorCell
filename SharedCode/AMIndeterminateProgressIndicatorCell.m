@@ -145,7 +145,7 @@
 		NSLineCapStyle previousLineCapStyle = [NSBezierPath defaultLineCapStyle];
 		float previousLineWidth = [NSBezierPath defaultLineWidth]; 
 		// new defaults for our loop
-		[NSBezierPath setDefaultLineCapStyle:NSRoundLineCapStyle];
+		[NSBezierPath setDefaultLineCapStyle:NSLineCapStyleRound];
 		[NSBezierPath setDefaultLineWidth:strokeWidth];
 		if ([self isSpinning]) {
 			a = (270+(step* 30))*DEG2RAD;
