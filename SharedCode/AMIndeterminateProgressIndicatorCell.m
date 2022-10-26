@@ -54,7 +54,8 @@
 	if (color != value) {
 		[color release];
 		color = [value retain];
-		[[color colorUsingColorSpaceName:NSCalibratedRGBColorSpace] getRed:&redComponent green:&greenComponent blue:&blueComponent alpha:&alphaComponent];
+		NSColorSpace *colorSpace = [NSColorSpace deviceRGBColorSpace];
+		[[color colorUsingColorSpace:colorSpace] getRed:&redComponent green:&greenComponent blue:&blueComponent alpha:&alphaComponent];
 	}
 }
 
